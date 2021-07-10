@@ -11,8 +11,13 @@ from flask_mail import Mail, Message
 # Configure Server Paramenters
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
+<<<<<<< HEAD
 app.config['MAIL_USERNAME'] = os.environ.get('USER_EMAIL')
 app.config['MAIL_PASSWORD'] = os.environ.get('USER_PASSWORD')
+=======
+app.config['MAIL_USERNAME'] =  "thedavidonyekachi@gmail.com" #os.environ.get('USER_MAIL')
+app.config['MAIL_PASSWORD'] = "Redeemed01@" #os.environ.get('USER_PASSWORD')
+>>>>>>> edbbdc6a45d83094b28439b9a47d5649421c45de
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
@@ -65,9 +70,9 @@ def thankyou():
 def notfound():
     return render_template('404.html')
 
-if __name__ == '__main__':
-    app.debug = True
-    app.run()
-
 # if __name__ == '__main__':
-#     app.run(debug=True)
+#     app.debug = True
+#     app.run()
+
+if __name__ == '__main__':
+    app.run(debug=False)
