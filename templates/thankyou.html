@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Bulma CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    <title>24Hours NG | Hypertension Tea Thanks</title>
+  </head>
+  <body>
+    <header>
+        <!-- NAVBAR -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Hypertension Tea Thanks</li>
+          </ol>
+        </nav>
+    </header>
+	<div class="container">
+
+      <!-- HERO -->
+      <section class="hero is-info is-medium is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title" style="color: ">
+                	ORDER RECEIVED SUCCESSFULY!
+                </h1>
+            </div>
+        </div>
+      </section>
+
+     	 <!-- FOOTER -->
+      	<div class="card article">
+	        <footer class="card-content">
+	        	<!-- MESSAGE -->
+	      		<section>
+		      		<p>
+		      			Hello {{ name }},
+		      			<br><br>
+						We just received your order for the HYPTERTENSION TEA PRODUCT. We will check your order details and one of our staffs will get in touch with you within the next 24 hours. <br>
+						Please ensure to pick your calls once we put a confirmation call across and thank you for patronising us.
+					</p> <br>
+					<p>
+						You will receive a call from this number: 
+						<span style="color: blue">0813 495 5949</span>
+					</p>
+		      	</section>
+	      		<hr>
+	              <div style="text-align: center; min-height: 400px; margin-bottom: 90px;"> </div>
+	              <div>
+                  <div style="text-align: center;"> <hr>
+                    &copy; Copyright 2021 | Disclaimer I Refund Policy | Privacy Policy | To Disclaimer <a class="nav-link" href="https://www.24hoursng.com/">24Hours Health Remedy Stores</a>
+                  </div>
+	                <small class="text-muted">
+	                  This Site Is Not A Part Of Facebook Website Or Facebook Inc. Additionally, This Site Is NOT Endorsed By Facebook In Any Way. FACEBOOK Is A Trademark Of FACEBOOK Inc
+	                </small>
+	              </div>
+	        </footer>
+    	</div>
+	</div>
+    <!-- 	END OF CONTAINER -->
+</body>
+</html>
