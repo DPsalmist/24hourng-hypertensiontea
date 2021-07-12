@@ -11,12 +11,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  >
+
     <!-- Bulma CSS -->
    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
 
+    <!-- AJAX QUERY -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Custom JS -->
+<!--     <script type="text/javascript" src="{{ url_for('static', filename='js/popup.js') }}"></script> -->
     <title>24Hours Health Remedy Stores | Hypertension Tea</title>
   </head>
   <body>
@@ -56,7 +63,7 @@
                             <div class="media-content has-text-centered">
                                 <p class="title article-title">A 'Daily' Tea Cup of this TEA is all you need to permanently lower HIGH BLOOD PRESSURE and prevent stroke, hypertension heart problems and other cardiovascular disease caused by Microcirculation disturbance or heart atack within the next 20 to 30 days.</p>
                                 <div class="tags has-addons level-item">
-                                    <span class="tag is-rounded is-info">24hourng</span>
+                                    <span class="tag is-rounded is-info">24hoursng</span>
                                 </div>
                             </div>
                         </div>
@@ -372,7 +379,7 @@
                 "position":"right"
               },
               "brandSetting":{
-                "brandName":"24 hours ng",
+                "brandName":"24 Hours Health Remedy Stores",
                 "brandSubTitle":"Typically replies within a day",
                 "brandImg":"https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
                 "welcomeText":"Hi, there!\nHow can we help you?",
@@ -407,10 +414,31 @@
       </section>
     </div>
 
+                      <!-- POP UP -->
+                   <section class="custom-social-proof">
+                      <div class="custom-notification" style="display:none" id="hide">
+                        <div class="custom-notification-container" id="content">
+                          <div class="custom-notification-image-wrapper">
+                          </div>
+                          <div class="custom-notification-content-wrapper">
+                            <p class="custom-notification-content">
+                             <span id="customer">Essien</span> recently <span id="product"> purchased this product.</span>
+                              <small>
+                                <br>
+                                <span id="time">3</span> minutes ago &nbsp; 
+                                <i class="fa fa-check-circle"></i> Verified by <a class="poweredby" href="https://thenexttechie.com" target="_blank">The Next Techie</a>
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="custom-close"></div>
+                      </div>
+                    </section>
+                <!-- END OF POP UP -->
+
 
     <!-- Optional JavaScript -->
-        <!-- Custom JS -->
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
