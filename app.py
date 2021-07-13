@@ -65,9 +65,6 @@ def thankyou():
 def notfound():
     return render_template('404.html')
 
-# if __name__ == '__main__':
-#     app.debug = True
-#     app.run()
 
 if __name__ == '__main__':
-    app.run(debug=False)
+	app.run(debug=False)
