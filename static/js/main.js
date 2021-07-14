@@ -39,6 +39,9 @@ r_text[6] = "Femi Sukanmi";
 r_text[7] = "Bart";
 r_text[8] = "David O.";
 r_text[9] = "Riliwan Ogunlana";
+r_text[10] = "Mark Chidiebere";
+r_text[11] = "Collins T. O.";
+r_text[12] = "Anita Osifo";
 
 
     var r_map = new Array ();
@@ -59,17 +62,22 @@ r_product[4] = "purchased this product.";
 r_product[5] = "purchased this product.";
 r_product[6] = "purchased this product.";
 r_product[7] = "purchased this product.";
-     setInterval(function(){ $(".custom-social-proof").stop().slideToggle('slow'); }, 10000);
+r_product[8] = "purchased this product.";
+r_product[9] = "purchased this product.";
+r_product[10] = "purchased this product.";
+r_product[11] = "purchased this product.";
+r_product[12] = "purchased this product.";
+     setInterval(function(){ $(".custom-social-proof").stop().slideToggle('slow'); }, 15000);
       $(".custom-close").click(function() {
         $(".custom-social-proof").stop().slideToggle('slow');
       });
         setInterval(function(){    
-        	var myNumber = Math.floor(7*Math.random());
+        	var myNumber = Math.floor(9*Math.random());
         	$("#map1").attr("src",r_map[myNumber]);
  			$('#customer').text(r_text[myNumber]);
 
           	$('#product').text(r_product[Math.floor(7*Math.random())]);
- 			var timeVal = Math.floor(7*Math.random());
+ 			var timeVal = Math.floor(9*Math.random());
  	
  			$('#time').text(timeVal);
  		

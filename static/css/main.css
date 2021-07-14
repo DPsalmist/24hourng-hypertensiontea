@@ -78,8 +78,9 @@ form input#submit:hover{
 
 /* POP UP */
 #content {
-    background-color: lightgrey;
+    background-color: #fff;
     border-radius: 10%;
+    box-shadow: 3px 2px #888888;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
