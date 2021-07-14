@@ -26,10 +26,10 @@ app.secret_key = 'development key'
 # Routes
 @app.route('/')
 def index():
-	return redirect ('/healthremedystores')
+	return redirect ('/hypertensiontea')
 	
 
-@app.route('/healthremedystores', methods=['GET', 'POST'])
+@app.route('/hypertensiontea', methods=['GET', 'POST'])
 def healthremedystores():
 	form = ContactForm()
 
