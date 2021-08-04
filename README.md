@@ -2,7 +2,6 @@
 
 24 Hours Health Remedy Stores - Hypertension Tea Product
 
-A client's website built with HTML, Bootstrap & Bulma CSS and Flask. 
+A client's website - built with HTML, Bulma CSS, and Flask. Deployed to digital ocean.
 
-Deployed with Heroku
-
+URL: https://24hoursng.com/hypertensiontea
