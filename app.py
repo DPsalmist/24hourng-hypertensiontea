@@ -11,8 +11,8 @@ from flask_mail import Mail, Message
 # Configure Server Paramenters
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = os.environ.get('USER_EMAIL')
-app.config['MAIL_PASSWORD'] = os.environ.get('USER_PASSWORD')
+app.config['MAIL_USERNAME'] = 'thedavidonyekachi@gmail.com' #os.environ.get('USER_EMAIL')
+app.config['MAIL_PASSWORD'] = 'Redeemed01@' #os.environ.get('USER_PASSWORD')
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
@@ -31,6 +31,8 @@ def index():
 
 @app.route('/hypertensiontea', methods=['GET', 'POST'])
 def healthremedystores():
+	print (os.environ.get("USER_EMAIL")) 
+	print (os.environ.get("USER_PASSWORD"))
 	form = ContactForm()
 
 	if request.method == 'POST':
