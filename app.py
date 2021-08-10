@@ -11,8 +11,8 @@ from flask_mail import Mail, Message
 # Configure Server Paramenters
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'thedavidonyekachi@gmail.com' #os.environ.get('USER_EMAIL')
-app.config['MAIL_PASSWORD'] = 'Redeemed01@' #os.environ.get('USER_PASSWORD')
+app.config['MAIL_USERNAME'] = 'thedavidonyekachi@gmail.com' 
+app.config['MAIL_PASSWORD'] = 'Redeemed01@'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
@@ -20,7 +20,7 @@ app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
 
 # Set secret key
-app.secret_key = 'development key'
+app.secret_key = 'my production key'
 
 
 # Routes
