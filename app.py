@@ -11,8 +11,8 @@ from flask_mail import Mail, Message
 # Configure Server Paramenters
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'thedavidonyekachi@gmail.com' #os.environ.get('USER_EMAIL')
-app.config['MAIL_PASSWORD'] = 'Redeemed01@' #os.environ.get('USER_PASSWORD')
+app.config['MAIL_USERNAME'] =  'testdamilare@gmail.com' #os.environ.get('USER_EMAIL')
+app.config['MAIL_PASSWORD'] =  '#damilaretesting' #os.environ.get('USER_PASSWORD')
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
@@ -53,7 +53,7 @@ def healthremedystores():
 		name = session['name'] = fullname
 	
 		# Using Flask Mail
-		message = Message(subject, sender='thedavidonyekachi@gmail.com', recipients=['thedavidonyekachi@gmail.com'])
+		message = Message(subject, sender='testdamilare@gmail.com', recipients=['testdamilare@gmail.com'])
 		message.body = msg
 		mail.send(message)
 
